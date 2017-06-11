@@ -5,6 +5,7 @@ workspace "Box2D"
 	location ( "Build/%{_ACTION}" )
 	architecture "x86_64"
 	configurations { "Debug", "Release" }
+	flags { "StaticRuntime" }
 
 	configuration "vs*"
 		defines { "_CRT_SECURE_NO_WARNINGS" }	
