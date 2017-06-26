@@ -20,7 +20,7 @@ workspace "Box2D"
 		defines { "NDEBUG" }
 		optimize "On"
 
-	filter "language:C++"
+	filter { "language:C++", "toolset:gcc" }
 		buildoptions { "-std=c++11" }
 
 project "Box2D"
@@ -115,34 +115,6 @@ project "IMGUI"
 	includedirs { "." }
 	configuration { "macosx" }
 		defines { "GLFW_INCLUDE_GLCOREARB" }
-
-project "HelloWorld"
-	kind "ConsoleApp"
-	language "C++"
-	files { "HelloWorld/HelloWorld.cpp" }
-	includedirs { "." }
-	links { "Box2D" }
-
-project "HelloWorld"
-	kind "ConsoleApp"
-	language "C++"
-	files { "HelloWorld/HelloWorld.cpp" }
-	includedirs { "." }
-	links { "Box2D" }
-
-project "HelloWorld"
-	kind "ConsoleApp"
-	language "C++"
-	files { "HelloWorld/HelloWorld.cpp" }
-	includedirs { "." }
-	links { "Box2D" }
-
-project "HelloWorld"
-	kind "ConsoleApp"
-	language "C++"
-	files { "HelloWorld/HelloWorld.cpp" }
-	includedirs { "." }
-	links { "Box2D" }
 
 project "HelloWorld"
 	kind "ConsoleApp"
